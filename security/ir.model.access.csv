@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_manageisaac_task,manageisaac.task,model_manageisaac_task,base.group_user,1,1,1,1
+access_manageisaac_sprint,manageisaac.sprint,model_manageisaac_sprint,base.group_user,1,1,1,1
+access_manageisaac_project,manageisaac.project,model_manageisaac_project,base.group_user,1,1,1,1
+access_manageisaac_history,manageisaac.history,model_manageisaac_history,base.group_user,1,1,1,1
+access_manageisaac_technology,manageisaac.technology,model_manageisaac_technology,base.group_user,1,1,1,1

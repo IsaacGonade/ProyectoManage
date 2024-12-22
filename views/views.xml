@@ -1,0 +1,21 @@
+<odoo>
+  <data>
+    <!-- actions opening views on models
+    <record model="ir.actions.act_window" id="manageisaac.action_window">
+      <field name="name">manageisaac window</field>
+      <field name="res_model">manageisaac.manageisaac</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    Top menu item
+    <menuitem name="manageisaac" id="manageisaac.menu_root"/>
+    <menu categories
+
+    <menuitem name="Management" id="manageisaac.menu_1" parent="manageisaac.menu_root"/>
+
+     actions
+
+    <menuitem name="Technology" id="manageisaac.menu_1_tech" parent="manageisaac.menu_1" action="manageisaac.action_window"/>
+    -->
+  </data>
+</odoo>

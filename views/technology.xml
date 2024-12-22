@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="vista_manageisaac_technology_tree">
+      <field name="name">vista_manageisaac_technology_tree</field>
+      <field name="model">manageisaac.technology</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="vista_manageisaac_technology_form">
+      <field name="name">vista_manageisaac_technology_form</field>
+      <field name="model">manageisaac.technology</field>
+      <field name="arch" type="xml">
+        <form string="formulario_technology">
+          <sheet>
+            <group name="group_top">
+              <group name="group_left">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="tasks_id"/>
+              </group>
+              <group name="group_right">
+                <field name="photo" widget="image"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="accion_manageisaac_technology_form">
+      <field name="name">Technologies</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">manageisaac.technology</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Technologies
+        </p>
+        <p> Click <strong> 'Crear' </strong> para añadir nuevos elementos
+        </p>
+      </field>
+    </record>
+
+     <!-- Top menu item -->
+    <menuitem name="Manage" id="manageisaac.menu_root"/>
+    <!-- menu categories -->
+
+    <menuitem name="Management" id="manageisaac.menu_1" parent="manageisaac.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="Technologies" id="manageisaac.menu_1_tech" parent="manageisaac.menu_1" action="accion_manageisaac_technology_form"/>
+  </data>
+</odoo>
