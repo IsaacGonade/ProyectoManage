@@ -1,2 +1,3 @@
 # ProyectoManage
-Memoria del proyecto Manage
+Memoria del proyecto Manage: 
+El código está en la rama master
